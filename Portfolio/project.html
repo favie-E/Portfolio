@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIBAS Case Study | Favie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Favie</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact" class="nav-cta">Hire me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="page">
+        <p><a href="index.html#projects">Back to all projects</a></p>
+        <h1>SIBAS: Student Information and Attendance System</h1>
+        <p class="lead">A database-backed web app for recording attendance and spotting students at risk, built for DTS304 (Data Management I).</p>
+        <p class="actions"><a class="btn btn-solid" href="https://YOUR-LIVE-LINK" target="_blank" rel="noopener">Open live app</a>
+        <a class="btn btn-line" href="https://github.com/YOUR-USERNAME/SIBAS-REPO" target="_blank" rel="noopener">Source code</a></p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="margin-title">Overview</h2>
+      <div class="page prose">
+        <p>SIBAS stores student records and class attendance in a PostgreSQL database and presents them through a Streamlit interface. Admins can review attendance and generate reports, and students can see their own dashboard. It was a group project, and my part was the attendance calculation, threshold flagging and report export.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="margin-title">The problem</h2>
+      <div class="page prose">
+        <p>Tracking attendance on paper or in scattered spreadsheets makes it slow to calculate scores and easy to miss students falling behind. SIBAS keeps everything in one structured database, calculates attendance automatically, and flags anyone below the required threshold.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="margin-title">Features</h2>
+      <div class="page">
+        <ul class="feature-list">
+          <li>Automatic attendance score calculation per student</li>
+          <li>Threshold flagging for students below the required percentage</li>
+          <li>Admin reporting views</li>
+          <li>CSV and PDF export of reports</li>
+          <li>Student dashboard to view personal attendance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="margin-title">Screenshots</h2>
+      <div class="page shots">
+        <figure><img src="images/sibas-1.png" alt="SIBAS student dashboard" width="600" height="380"><figcaption>Student dashboard</figcaption></figure>
+        <figure><img src="images/sibas-2.png" alt="SIBAS admin attendance report" width="600" height="380"><figcaption>Admin attendance report</figcaption></figure>
+        <figure><img src="images/sibas-3.png" alt="SIBAS exported PDF report" width="600" height="380"><figcaption>PDF export</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="margin-title">Technologies</h2>
+      <div class="page">
+        <ul class="chips"><li>Python</li><li>Streamlit</li><li>PostgreSQL</li><li>psycopg2</li><li>CSV and PDF generation</li><li>Git and GitHub</li></ul>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2 class="margin-title">What I learned</h2>
+      <div class="page prose">
+        <p>I learned how a database design (ERD and normalization) shapes the code written on top of it, and how to fit my work into a group's existing file structure instead of starting fresh. I also practised connecting Python to PostgreSQL with psycopg2 and fixing environment problems such as pip SSL errors on a restricted network. <!-- EDIT: add one lesson in your own words --></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Favie, Pan-Atlantic University, CSC 419 portfolio project, 2026.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
